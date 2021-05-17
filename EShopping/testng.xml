@@ -6,6 +6,7 @@
   <test thread-count="5" name="ChromeTest">
     <classes>
       <class name="com.testyantra.eshopping.testscripts.criticaltests.kart.TC001"/>
+      <class name="com.testyantra.eshopping.testscripts.criticaltests.kart.TC003"/>
     </classes>
   </test>
   
