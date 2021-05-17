@@ -24,7 +24,6 @@ public class TC003 extends BaseTest {
 		String size=ExcelLibrary.getData(sheetName, rowNumber, 4);
 		String colorName=ExcelLibrary.getData(sheetName, rowNumber, 5);
 		
-		//Write the test steps
 		ProductsListPage plp = hp.clickOnMenu(menuLinkName);
 		ProductDetailsPage pdp = plp.clickOnProduct(productId);
 		OrderDetailsPage odp = pdp.addItemToKart(increaseQuantity, decreaseQuantity, size, colorName);
