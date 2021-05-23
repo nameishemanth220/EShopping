@@ -27,7 +27,7 @@ public class TC003 extends BaseTest {
 		ProductsListPage plp = hp.clickOnMenu(menuLinkName);
 		ProductDetailsPage pdp = plp.clickOnProduct(productId);
 		OrderDetailsPage odp = pdp.addItemToKart(increaseQuantity, decreaseQuantity, size, colorName);
-		Assert.assertTrue(odp.isProductDisplayed(productId),"The Product is Not Displayed in ODP");
+		Assert.assertFalse(odp.isProductDisplayed(productId),"The Product is Not Displayed in ODP");
 		
 		odp.deleteProduct(productId, size, colorName);
 		Assert.assertFalse(odp.isProductDisplayed(productId),"The Product is Still Displayed in ODP");
